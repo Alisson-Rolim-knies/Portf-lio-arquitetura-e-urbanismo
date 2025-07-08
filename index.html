@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alisson Rolim Knies - Arquiteto e Urbanista especializado em BIM</title>
+    <meta name="description"
+        content="Portfólio de Alisson Rolim Knies, arquiteto e urbanista especializado em BIM, gestão de obras e tecnologia na construção civil.">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header Navigation -->
+    <header class="header">
+        <nav class="nav container">
+            <div class="nav__brand">
+                <h2 class="nav__title">Alisson Knies</h2>
+            </div>
+            <ul class="nav__menu" id="navMenu">
+                <li class="nav__item">
+                    <a href="#home" class="nav__link active">Home</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#about" class="nav__link">Sobre</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#projects" class="nav__link">Projetos</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#experience" class="nav__link">Experiência</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#resume" class="nav__link">Currículo</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#contact" class="nav__link">Contato</a>
+                </li>
+            </ul>
+            <div class="nav__actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                    <span class="theme-toggle__icon">🌙</span>
+                </button>
+                <button class="nav__toggle" id="navToggle" aria-label="Toggle navigation">
+                    <span class="nav__toggle-line"></span>
+                    <span class="nav__toggle-line"></span>
+                    <span class="nav__toggle-line"></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <!-- Home Section -->
+        <section id="home" class="hero">
+            <div class="hero__background">
+                <div class="hero__grid"></div>
+            </div>
+            <div class="container">
+                <div class="hero__content">
+                    <div class="hero__text">
+                        <h1 class="hero__title">
+                            <span class="hero__name">Alisson Rolim Knies</span>
+                            <span class="hero__profession">Arquiteto e Urbanista especializado em BIM e Gestão de
+                                Obras</span>
+                        </h1>
+                        <p class="hero__description">
+                            Mais de 3 anos de experiência em gestão de obras, tecnologia BIM e coordenação de projetos.
+                            Especialista em inovação tecnológica aplicada ao setor da construção civil.
+                        </p>
+                        <div class="hero__stats">
+                            <div class="stat">
+                                <span class="stat__number">3+</span>
+                                <span class="stat__label">Anos de Experiência</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat__number">15+</span>
+                                <span class="stat__label">Obras Entregues</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat__number">8+</span>
+                                <span class="stat__label">Certificações</span>
+                            </div>
+                        </div>
+                        <div class="hero__actions">
+                            <button class="btn btn--primary" id="downloadCV">
+                                📄 Baixar Currículo PDF
+                            </button>
+                            <button class="btn btn--outline" id="contactBtn">
+                                ✉️ Entrar em Contato
+                            </button>
+                        </div>
+
+                    </div>
+                    <div class="hero__image">
+                        <div class="hero__avatar">
+                            <div class="avatar-placeholder">
+                                <img src="./img/avatar.jpeg" alt="Avatar" class="avatar">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about py-32">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Sobre Mim</h2>
+                    <p class="section-subtitle">Conheça minha trajetória e expertise</p>
+                </div>
+                <div class="about__content">
+                    <div class="about__text">
+                        <div class="about__bio">
+                            <h3>Perfil Profissional</h3>
+                            <p>
+                                Arquiteto e urbanista com mais de 3 anos de experiência em gestão de obras, tecnologia
+                                BIM e coordenação de projetos.
+                                Tenho sólida atuação com Revit, MS Project e ferramentas de gestão de construção, com
+                                foco em inovação tecnológica aplicada ao setor da construção civil.
+                            </p>
+                            <p>
+                                Experiência comprovada em coordenação de equipes multidisciplinares, compatibilização de
+                                projetos e implementação de metodologias BIM
+                                para otimização de processos construtivos.
+                            </p>
+                        </div>
+                        <div class="about__goals">
+                            <h3>Objetivos</h3>
+                            <ul>
+                                <li>Liderar projetos de transformação digital no setor da construção civil</li>
+                                <li>Aplicar agentes de inteligência artificial para otimizar processos construtivos</li>
+                                <li>Contribuir para a sustentabilidade e eficiência dos empreendimentos</li>
+                                <li>Garantir a excelência técnica, qualidade e profissionalismo em todas as etapas dos
+                                    projetos</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="about__skills">
+                        <h3>Competências Técnicas</h3>
+                        <div class="skills-grid" id="skillsGrid">
+                            <!-- Skills will be populated by JavaScript -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects py-32">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Projetos</h2>
+                    <p class="section-subtitle">Portfólio de projetos desenvolvidos</p>
+                </div>
+                <div class="projects__filters">
+                    <button class="filter-btn active" data-filter="all">Todos</button>
+                    <button class="filter-btn" data-filter="Residential">Residencial</button>
+                    <button class="filter-btn" data-filter="Commercial">Comercial</button>
+                    <button class="filter-btn" data-filter="Planning">Planejamento</button>
+                    <button class="filter-btn" data-filter="Renovation">Retrofit</button>
+                </div>
+                <div class="projects__grid" id="projectsGrid">
+                    <!-- Projects will be populated by JavaScript -->
+                </div>
+                <div class="projects__admin">
+                    <button class="btn btn--secondary" id="adminToggle">
+                        ⚙️ Painel Administrativo
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="experience py-32">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Experiência Profissional</h2>
+                    <p class="section-subtitle">Trajetória e conquistas</p>
+                </div>
+                <div class="timeline" id="experienceTimeline">
+                    <!-- Experience items will be populated by JavaScript -->
+                </div>
+                <div class="certifications">
+                    <h3>Certificações</h3>
+                    <div class="certifications__grid">
+                        <div class="certification-item">
+                            <span class="certification-icon">🏗️</span>
+                            <span class="certification-name">Autodesk Certified Professional: Revit Architecture</span>
+                        </div>
+                        <div class="certification-item">
+                            <span class="certification-icon">📊</span>
+                            <span class="certification-name">PMI - Project Management Professional (PMP)</span>
+                        </div>
+                        <div class="certification-item">
+                            <span class="certification-icon">🏢</span>
+                            <span class="certification-name">Certificação BIM - Construção Civil</span>
+                        </div>
+                        <div class="certification-item">
+                            <span class="certification-icon">🌱</span>
+                            <span class="certification-name">Green Building Council - LEED Green Associate</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Resume Section -->
+        <section id="resume" class="resume py-32">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Currículo</h2>
+                    <p class="section-subtitle">Visualize e baixe meu currículo completo</p>
+                </div>
+                <div class="resume__content">
+                    <div class="resume__viewer">
+                        <div class="pdf-placeholder">
+                            <div class="pdf-icon">📄</div>
+                            <h3>Currículo - Alisson Rolim Knies</h3>
+                            <p>Arquiteto e Urbanista especializado em BIM</p>
+                            <button class="btn btn--primary" id="downloadResume">
+                                ⬇️ Baixar PDF
+                            </button>
+                        </div>
+                    </div>
+                    <div class="resume__summary">
+                        <h3>Resumo Executivo</h3>
+                        <div class="summary-item">
+                            <strong>Formação:</strong> Arquitetura e Urbanismo - Universidade Mackenzie (2021)
+                        </div>
+                        <div class="summary-item">
+                            <strong>Experiência:</strong> 2+ anos em gestão de obras e BIM
+                        </div>
+                        <div class="summary-item">
+                            <strong>Especialização:</strong> Revit, MS Project, Construct IN
+                        </div>
+                        <div class="summary-item">
+                            <strong>Certificações:</strong> 8+ certificações profissionais
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact py-32">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Contato</h2>
+                    <p class="section-subtitle">Vamos conversar sobre oportunidades</p>
+                </div>
+                <div class="contact__content">
+                    <div class="contact__info">
+                        <h3>Informações de Contato</h3>
+                        <div class="contact-item">
+                            <span class="contact-icon">📧</span>
+                            <span>alisson.arque@gmail.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">📱</span>
+                            <span>+55 (55) 99931-8835</span>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">📍</span>
+                            <span>Joinville, SC</span>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">💼</span>
+                            <a href="https://www.linkedin.com/in/alisson-rolim-knies-53b233213/"
+                                target="_blank">LinkedIn</a>
+                        </div>
+                        <div class="contact__message">
+                            <p>
+                                Estou sempre aberto a novas oportunidades e projetos desafiadores.
+                                Entre em contato para discutirmos como posso contribuir para sua empresa.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="contact__form">
+                        <form id="contactForm" class="form">
+                            <div class="form-group">
+                                <label for="name" class="form-label">Nome *</label>
+                                <input type="text" id="name" name="name" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email" class="form-label">Email *</label>
+                                <input type="email" id="email" name="email" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="company" class="form-label">Empresa</label>
+                                <input type="text" id="company" name="Empresa" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="subject" class="form-label">Assunto *</label>
+                                <input type="text" id="subject" name="Assunto" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message" class="form-label">Mensagem *</label>
+                                <textarea id="message" name="Mensagem" class="form-control" rows="5"
+                                    required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn--primary btn--full-width">
+                                Enviar Mensagem
+                            </button>
+                        </form>
+                        <div id="formMessage" class="form-message hidden"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Project Modal -->
+    <div id="projectModal" class="modal">
+        <div class="modal__content">
+            <button class="modal__close" id="closeModal">&times;</button>
+            <div class="modal__body" id="modalBody">
+                <!-- Modal content will be populated by JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Admin Panel -->
+    <div id="adminPanel" class="admin-panel hidden">
+        <div class="admin-panel__header">
+            <h3>Painel Administrativo - Projetos</h3>
+            <button class="btn btn--secondary" id="closeAdmin">Fechar</button>
+        </div>
+        <div class="admin-panel__content">
+            <button class="btn btn--primary" id="addProject">Adicionar Projeto</button>
+            <div class="admin-projects" id="adminProjects">
+                <!-- Admin projects will be populated by JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Project Form Modal -->
+    <div id="projectFormModal" class="modal">
+        <div class="modal__content">
+            <button class="modal__close" id="closeProjectForm">&times;</button>
+            <div class="modal__body">
+                <h3 id="projectFormTitle">Adicionar Projeto</h3>
+                <form id="projectForm" class="form">
+                    <div class="form-group">
+                        <label for="projectTitle" class="form-label">Título *</label>
+                        <input type="text" id="projectTitle" name="title" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="projectDescription" class="form-label">Descrição *</label>
+                        <textarea id="projectDescription" name="description" class="form-control" rows="4"
+                            required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="projectCategory" class="form-label">Categoria *</label>
+                        <select id="projectCategory" name="category" class="form-control" required>
+                            <option value="">Selecione uma categoria</option>
+                            <option value="Residential">Residencial</option>
+                            <option value="Commercial">Comercial</option>
+                            <option value="Planning">Planejamento</option>
+                            <option value="Renovation">Retrofit</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="projectYear" class="form-label">Ano *</label>
+                        <input type="number" id="projectYear" name="year" class="form-control" min="2020" max="2030"
+                            required>
+                    </div>
+                    <div class="form-group">
+                        <label for="projectTags" class="form-label">Tags (separadas por vírgula) *</label>
+                        <input type="text" id="projectTags" name="tags" class="form-control"
+                            placeholder="BIM, Revit, Gestão" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="projectTechnologies" class="form-label">Tecnologias (separadas por vírgula)
+                            *</label>
+                        <input type="text" id="projectTechnologies" name="technologies" class="form-control"
+                            placeholder="Revit, MS Project, AutoCAD" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="projectStatus" class="form-label">Status *</label>
+                        <select id="projectStatus" name="status" class="form-control" required>
+                            <option value="">Selecione um status</option>
+                            <option value="Concluído">Concluído</option>
+                            <option value="Em andamento">Em andamento</option>
+                            <option value="Em desenvolvimento">Em desenvolvimento</option>
+                        </select>
+                    </div>
+                    <div class="form-actions">
+                        <button type="submit" class="btn btn--primary">Salvar Projeto</button>
+                        <button type="button" class="btn btn--secondary" id="cancelProjectForm">Cancelar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top hidden" aria-label="Voltar ao topo">
+        ↑
+    </button>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
