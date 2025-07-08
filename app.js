@@ -454,6 +454,23 @@ function downloadCV() {
   console.log('✅ Download do currículo iniciado com sucesso!');
 }
 
+
+const blob = new Blob([pdfContent], { type: 'application/pdf' });
+const url = URL.createObjectURL(blob);
+
+const link = document.createElement('a');
+link.href = url;
+link.download = 'Curriculo_Alisson_Rolim_Knies.pdf';
+document.body.appendChild(link);
+link.click();
+document.body.removeChild(link);
+
+URL.revokeObjectURL(url);
+
+// Mostrar feedback
+alert('📄 Download do currículo iniciado com sucesso!');
+
+
 // -------------------- MODAIS GENÉRICOS ---------------------
 function initModals() {
   const projectModal = document.getElementById('projectModal');
@@ -515,7 +532,9 @@ function initAdminPanel() {
   if (adminToggle && adminPanel) {
     adminToggle.addEventListener('click', () => {
       console.log('⚙️ Abrindo painel administrativo...');
+      adminPanel.classList.remove('hidden');
       adminPanel.classList.add('active');
+
       renderAdminList();
     });
   }
