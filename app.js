@@ -34,9 +34,21 @@ const APP_DATA = {
   experience: [
     {
       id: 1,
+      company: "Estagiário de Obras BK Construções",
+      position: "Arquiteto Urbanista",
+      period: "Janeiro/2021 – Dezembro/2021",
+      description: "Estagiário de obra em canteiro de edifícios multifamiliares com sistema em alvenaria estrutural.Acompanhei todas as etapas do ciclo de vida do projeto, garantindo a conformidade com o PBQP-H.Contribuí para a conquista da certificação PBQP-H Nível A, assegurando a qualidade dos processos executivos.",
+      achievements: [
+        "Suporte à gestão de obras em alvenaria estrutural",
+        "Implementação do PBQP-H.",
+        "Modelagem em BIM"
+      ]
+    },
+    {
+      id: 2,
       company: "BK Construções",
       position: "Arquiteto Urbanista",
-      period: "2022 - Presente",
+      period: "2022 - 2024",
       description: "Gestão simultânea de múltiplos contratos de construção, garantindo conformidade técnica e implementação de metodologias BIM. Coordenação de equipes multidisciplinares e controle de qualidade de projetos.",
       achievements: [
         "Implementação de metodologia BIM em 100% dos projetos",
@@ -45,15 +57,27 @@ const APP_DATA = {
       ]
     },
     {
-      id: 2,
-      company: "Construtora Urbana",
-      position: "Analista de Projetos BIM",
-      period: "2021 - 2022",
-      description: "Desenvolvimento e coordenação de projetos em ambiente BIM, com foco em compatibilização de disciplinas e extração de quantitativos para orçamentação.",
+      id: 3,
+      company: " APAE Santa Maria RS",
+      position: "Arquiteto e Urbanista",
+      period: "2022 - 2024",
+      description: "Atuação voluntária na elaboração de projetos de reforma, ampliação e regularização da sede institucional, com ênfase na adequação dos espaços físicos às normas de acessibilidade e mobilidade previstas na NBR 9050.",
       achievements: [
-        "Coordenação de projetos BIM para 8 empreendimentos",
-        "Treinamento de 15 profissionais em metodologia BIM",
-        "Implementação de biblioteca de objetos BIM personalizada"
+        "Elaboração de projetos de reforma e ampliação",
+        "Elaboração de orçamentos detalhados",
+        "Acompanhamento de obras para garantir conformidade com normas de acessibilidade"
+      ]
+    },
+    {
+      id: 4,
+      company: "APAE CER IV",
+      position: "Arquiteto Urbanista",
+      period: "2022 - 2025",
+      description: "Arquiteto e Urbanista responsável, em parceria com o escritório A3, pelo desenvolvimento do projeto da nova sede da APAE Santa Maria/RS.O projeto, classificado como CER IV (Centro Especializado em Reabilitação – Nível IV), contempla reabilitação multiprofissional para pessoas com deficiência física, intelectual, auditiva e visual, atendendo aos mais altos padrões técnicos e funcionais.A proposta foi elaborada com foco em acessibilidade universal, eficiência espacial e conformidade com as diretrizes do SUS e normas técnicas aplicáveis.",
+      achievements: [
+        "Elaboração e aprovação de projetos junto aos órgãos competentes",
+        "Elaboração completa de orçamentos técnicos detalhados para obras e projetos.",
+        "Compatibilização entre disciplinas técnicas, garantindo a integração e coerência dos projetos complementares."
       ]
     }
   ]
@@ -305,9 +329,9 @@ function showContactMessage(msg, type) {
 // -------------------- DOWNLOADS -----------------------------
 function initDownloadButtons() {
   document.querySelectorAll("#downloadCV, #downloadResume").forEach(button => {
-      if(button) {
-          button.addEventListener("click", downloadCV);
-      }
+    if (button) {
+      button.addEventListener("click", downloadCV);
+    }
   });
 }
 
