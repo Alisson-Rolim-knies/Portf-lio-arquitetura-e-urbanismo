@@ -12,31 +12,19 @@
 </head>
 
 <body>
-    <!-- Header Navigation -->
+    <!-- ======================= Header e Navegação ======================= -->
     <header class="header">
         <nav class="nav container">
             <div class="nav__brand">
                 <h2 class="nav__title">Alisson Knies</h2>
             </div>
             <ul class="nav__menu" id="navMenu">
-                <li class="nav__item">
-                    <a href="#home" class="nav__link active">Home</a>
-                </li>
-                <li class="nav__item">
-                    <a href="#about" class="nav__link">Sobre</a>
-                </li>
-                <li class="nav__item">
-                    <a href="#projects" class="nav__link">Projetos</a>
-                </li>
-                <li class="nav__item">
-                    <a href="#experience" class="nav__link">Experiência</a>
-                </li>
-                <li class="nav__item">
-                    <a href="#resume" class="nav__link">Currículo</a>
-                </li>
-                <li class="nav__item">
-                    <a href="#contact" class="nav__link">Contato</a>
-                </li>
+                <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
+                <li class="nav__item"><a href="#about" class="nav__link">Sobre</a></li>
+                <li class="nav__item"><a href="#projects" class="nav__link">Projetos</a></li>
+                <li class="nav__item"><a href="#experience" class="nav__link">Experiência</a></li>
+                <li class="nav__item"><a href="#resume" class="nav__link">Currículo</a></li>
+                <li class="nav__item"><a href="#contact" class="nav__link">Contato</a></li>
             </ul>
             <div class="nav__actions">
                 <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
@@ -52,11 +40,8 @@
     </header>
 
     <main class="main">
-        <!-- Home Section -->
+        <!-- ======================= Seção Home (Hero) ======================= -->
         <section id="home" class="hero">
-            <div class="hero__background">
-                <div class="hero__grid"></div>
-            </div>
             <div class="container">
                 <div class="hero__content">
                     <div class="hero__text">
@@ -79,7 +64,7 @@
                                 <span class="stat__label">Obras Entregues</span>
                             </div>
                             <div class="stat">
-                                <span class="stat__number">8+</span>
+                                <span class="stat__number">6+</span>
                                 <span class="stat__label">Certificações</span>
                             </div>
                         </div>
@@ -87,319 +72,280 @@
                             <button class="btn btn--primary" id="downloadCV">
                                 📄 Baixar Currículo PDF
                             </button>
-                            <button class="btn btn--outline" id="contactBtn">
+                            <a href="#contact" class="btn btn--outline">
                                 ✉️ Entrar em Contato
-                            </button>
+                            </a>
                         </div>
-
                     </div>
                     <div class="hero__image">
                         <div class="hero__avatar">
-                            <div class="avatar-placeholder">
-                                <img src="./img/avatar.jpeg" alt="Avatar" class="avatar">
-                            </div>
+                            <img src="./img/avatar.jpeg" alt="Avatar de Alisson Knies" class="avatar">
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- About Section -->
-        <section id="about" class="about py-32">
+        <!-- ======================= Seção Sobre Mim ======================= -->
+        <section id="about" class="about py-section">
             <div class="container">
                 <div class="section-header">
                     <h2 class="section-title">Sobre Mim</h2>
                     <p class="section-subtitle">Conheça minha trajetória e expertise</p>
                 </div>
                 <div class="about__content">
-                    <div class="about__text">
-                        <div class="about__bio">
-                            <h3>Perfil Profissional</h3>
-                            <p>
-                                Arquiteto e urbanista com mais de 3 anos de experiência em gestão de obras, tecnologia
-                                BIM e coordenação de projetos.
-                                Tenho sólida atuação com Revit, MS Project e ferramentas de gestão de construção, com
-                                foco em inovação tecnológica aplicada ao setor da construção civil.
-                            </p>
-                            <p>
-                                Experiência comprovada em coordenação de equipes multidisciplinares, compatibilização de
-                                projetos e implementação de metodologias BIM
-                                para otimização de processos construtivos.
-                            </p>
-                        </div>
-                        <div class="about__goals">
-                            <h3>Objetivos</h3>
-                            <ul>
-                                <li>Liderar projetos de transformação digital no setor da construção civil</li>
-                                <li>Aplicar agentes de inteligência artificial para otimizar processos construtivos</li>
-                                <li>Contribuir para a sustentabilidade e eficiência dos empreendimentos</li>
-                                <li>Garantir a excelência técnica, qualidade e profissionalismo em todas as etapas dos
-                                    projetos</li>
-                            </ul>
-                        </div>
+                    <div class="about__bio">
+                        <h3>Quem sou eu</h3>
+                        <p>Arquiteto e urbanista com mais de 3 anos de experiência em gestão de obras, tecnologia BIM e
+                            coordenação de projetos. Especialista em Revit, MS Project e ferramentas de gestão de
+                            construção. Focado em inovação tecnológica aplicada ao setor da construção civil.</p>
                     </div>
                     <div class="about__skills">
-                        <h3>Competências Técnicas</h3>
-                        <div class="skills-grid" id="skillsGrid">
-                            <!-- Skills will be populated by JavaScript -->
+                        <h3>Habilidades Técnicas</h3>
+                        <div id="skillsGrid" class="skills-grid">
+                            <!-- Skills serão renderizadas pelo app.js -->
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Projects Section -->
-        <section id="projects" class="projects py-32">
+        <!-- ======================= Seção de Projetos ======================= -->
+        <section id="projects" class="projects py-section">
             <div class="container">
                 <div class="section-header">
-                    <h2 class="section-title">Projetos</h2>
-                    <p class="section-subtitle">Portfólio de projetos desenvolvidos</p>
+                    <h2 class="section-title">Projetos em Destaque</h2>
+                    <p class="section-subtitle">Uma seleção dos meus trabalhos mais recentes.</p>
                 </div>
-                <div class="projects__filters">
-                    <button class="filter-btn active" data-filter="all">Todos</button>
-                    <button class="filter-btn" data-filter="Residential">Residencial</button>
-                    <button class="filter-btn" data-filter="Commercial">Comercial</button>
-                    <button class="filter-btn" data-filter="Planning">Planejamento</button>
-                    <button class="filter-btn" data-filter="Renovation">Retrofit</button>
+
+                <div class="manual-projects-grid">
+                    <!-- Projeto 1 (Com Carrossel) -->
+                    <div class="manual-project-card fade-in">
+                        <div class="manual-project-card__visual-container">
+                            <div class="project-carousel-container">
+                                <div class="project-carousel-slides">
+                                    <img src="./img/axiom 02.JPG" alt="Axiom - Vista 1" class="carousel-slide active">
+                                    <img src="./img/axiom.JPG" alt="Axiom - Vista 2" class="carousel-slide">
+                                    <img src="./img/axiom 03.JPG" alt="Axiom - Vista 3" class="carousel-slide">
+                                </div>
+                            </div>
+                            <div class="manual-project-card__content">
+                                <h3 class="manual-project-card__title">Axiom Treinamentos</h3>
+                                <p class="manual-project-card__description">Projeto desenvolvido no curso AXIOM BIM para
+                                    Arquitetos, com foco em estudos de insolação, geração automática de quantitativos de
+                                    materiais e aplicação de fluxos BIM para tomada de decisão projetual.</p>
+                                <div class="manual-project-card__meta">
+                                    <span class="meta-item">📍 Santa Maria, RS</span>
+                                    <span class="meta-item">📅 2024</span>
+                                </div>
+                            </div>
+                            <div class="carousel-dots">
+                                <span class="carousel-dot active" data-slide="0"></span>
+                                <span class="carousel-dot" data-slide="1"></span>
+                                <span class="carousel-dot" data-slide="2"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Projeto 2 (Com Carrossel) -->
+                    <div class="manual-project-card fade-in">
+                        <div class="manual-project-card__visual-container">
+                            <div class="project-carousel-container">
+                                <div class="project-carousel-slides">
+                                    <img src="./img/apae 01.JPG" alt="APAE - Vista 1" class="carousel-slide active">
+                                    <img src="./img/apae 02.JPG" alt="APAE - Vista 2" class="carousel-slide">
+                                    <img src="./img/apae 03.JPG" alt="APAE - Vista 3" class="carousel-slide">
+                                </div>
+                            </div>
+                            <div class="manual-project-card__content">
+                                <h3 class="manual-project-card__title">APAE CER IV</h3>
+                                <p class="manual-project-card__description">Projeto da nova sede da APAE Santa Maria/RS,
+                                    classificado como CER IV, com foco em acessibilidade universal e eficiência
+                                    espacial.</p>
+                                <div class="manual-project-card__meta">
+                                    <span class="meta-item">📍 Santa Maria, RS</span>
+                                    <span class="meta-item">📅 2025</span>
+                                </div>
+                            </div>
+                            <div class="carousel-dots">
+                                <span class="carousel-dot active" data-slide="0"></span>
+                                <span class="carousel-dot" data-slide="1"></span>
+                                <span class="carousel-dot" data-slide="2"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Projeto 3 (Com Carrossel) -->
+                    <div class="manual-project-card fade-in">
+                        <div class="manual-project-card__visual-container">
+                            <div class="project-carousel-container">
+                                <div class="project-carousel-slides">
+                                    <img src="./img/Autoglass_em_santa_maria_rs.jpg" alt="Axiom - Vista 1"
+                                        class="carousel-slide active">
+                                    <img src="./img/auto.02.jpg" alt="Axiom - Vista 2" class="carousel-slide">
+                                    <img src="./img/auto.03.jpeg" alt="Axiom - Vista 3" class="carousel-slide">
+                                </div>
+                            </div>
+                            <div class="manual-project-card__content">
+                                <h3 class="manual-project-card__title">Autoglass unidade de santa maria rs</h3>
+                                <p class="manual-project-card__description">Execução da nova sede da Autoglass em Santa
+                                    Maria/RS, com responsabilidade sobre os projetos arquitetônico, hidrossanitário,
+                                    elétrico, PPCI e de interiores, assegurando a integração entre as disciplinas e
+                                    conformidade com as normas técnicas vigentes.</p>
+                                <div class="manual-project-card__meta">
+                                    <span class="meta-item">📍 Santa Maria, RS</span>
+                                    <span class="meta-item">📅 2022</span>
+                                </div>
+                            </div>
+                            <div class="carousel-dots">
+                                <span class="carousel-dot active" data-slide="0"></span>
+                                <span class="carousel-dot" data-slide="1"></span>
+                                <span class="carousel-dot" data-slide="2"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Projeto 4 (Com Carrossel) -->
+                    <div class="manual-project-card fade-in">
+                        <div class="manual-project-card__visual-container">
+                            <div class="project-carousel-container">
+                                <div class="project-carousel-slides">
+                                    <img src="./img/mc001.jpeg" alt="Axiom - Vista 1" class="carousel-slide active">
+                                    <img src="./img/mc.02.jpg" alt="Axiom - Vista 2" class="carousel-slide">
+                                    <img src="./img/mc.jpg" alt="Axiom - Vista 3" class="carousel-slide">
+                                </div>
+                            </div>
+                            <div class="manual-project-card__content">
+                                <h3 class="manual-project-card__title">Residencial Macerata</h3>
+                                <p class="manual-project-card__description">Acompanhamento da execução de obras durante
+                                    estágio, prestando suporte ao engenheiro responsável no controle de qualidade
+                                    conforme diretrizes do PBQP-H, na gestão da mão de obra e na conferência dos
+                                    serviços executados em campo.</p>
+                                <div class="manual-project-card__meta">
+                                    <span class="meta-item">📍 Santa Maria, RS</span>
+                                    <span class="meta-item">📅 2021</span>
+                                </div>
+                            </div>
+                            <div class="carousel-dots">
+                                <span class="carousel-dot active" data-slide="0"></span>
+                                <span class="carousel-dot" data-slide="1"></span>
+                                <span class="carousel-dot" data-slide="2"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Projeto 5 (Com Carrossel) -->
+                    <div class="manual-project-card fade-in">
+                        <div class="manual-project-card__visual-container">
+                            <div class="project-carousel-container">
+                                <div class="project-carousel-slides">
+                                    <img src="./img/escola.png" alt="Axiom - Vista 1" class="carousel-slide active">
+                                </div>
+                            </div>
+                            <div class="manual-project-card__content">
+                                <h3 class="manual-project-card__title">Escola NotreDame</h3>
+                                <p class="manual-project-card__description">Elaboração e execução do projeto de reforma
+                                    e ampliação do edifício que passou a abrigar a nova sede da Escola Notre Dame, com
+                                    área superior a 1.800m², atendendo desde o berçário até o ensino médio. O projeto
+                                    contemplou adequações funcionais, normativas e de acessibilidade para uso
+                                    educacional.</p>
+                                <div class="manual-project-card__meta">
+                                    <span class="meta-item">📍 Santa Maria, RS</span>
+                                    <span class="meta-item">📅 2023</span>
+                                </div>
+                            </div>
+                            <div class="carousel-dots">
+                                <span class="carousel-dot active" data-slide="0"></span>
+                                <span class="carousel-dot" data-slide="1"></span>
+                                <span class="carousel-dot" data-slide="2"></span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="projects__grid" id="projectsGrid">
-                    <!-- Projects will be populated by JavaScript -->
-                </div>
-                <div class="projects__admin">
-                    <button class="btn btn--secondary" id="adminToggle">
-                        ⚙️ Painel Administrativo
-                    </button>
-                </div>
-            </div>
         </section>
 
-        <!-- Experience Section -->
-        <section id="experience" class="experience py-32">
+        <!-- ======================= Seção de Experiência ======================= -->
+        <section id="experience" class="experience py-section">
             <div class="container">
                 <div class="section-header">
                     <h2 class="section-title">Experiência Profissional</h2>
-                    <p class="section-subtitle">Trajetória e conquistas</p>
+                    <p class="section-subtitle">Minha jornada no mercado de arquitetura e construção.</p>
                 </div>
-                <div class="timeline" id="experienceTimeline">
-                    <!-- Experience items will be populated by JavaScript -->
-                </div>
-                <div class="certifications">
-                    <h3>Certificações</h3>
-                    <div class="certifications__grid">
-                        <div class="certification-item">
-                            <span class="certification-icon">🏗️</span>
-                            <span class="certification-name">Autodesk Certified Professional: Revit Architecture</span>
-                        </div>
-                        <div class="certification-item">
-                            <span class="certification-icon">📊</span>
-                            <span class="certification-name">PMI - Project Management Professional (PMP)</span>
-                        </div>
-                        <div class="certification-item">
-                            <span class="certification-icon">🏢</span>
-                            <span class="certification-name">Certificação BIM - Construção Civil</span>
-                        </div>
-                        <div class="certification-item">
-                            <span class="certification-icon">🌱</span>
-                            <span class="certification-name">Green Building Council - LEED Green Associate</span>
-                        </div>
-                    </div>
+                <div id="experienceTimeline" class="timeline">
+                    <!-- Conteúdo da timeline será renderizado pelo app.js -->
                 </div>
             </div>
         </section>
 
-        <!-- Resume Section -->
-        <section id="resume" class="resume py-32">
-            <div class="container">
+        <!-- ======================= Seção de Currículo ======================= -->
+        <section id="resume" class="resume py-section">
+            <div class="container text-center">
                 <div class="section-header">
                     <h2 class="section-title">Currículo</h2>
-                    <p class="section-subtitle">Visualize e baixe meu currículo completo</p>
+                    <p class="section-subtitle">Veja mais detalhes sobre minha carreira e baixe meu currículo completo.
+                    </p>
                 </div>
-                <div class="resume__content">
-                    <div class="resume__viewer">
-                        <div class="pdf-placeholder">
-                            <div class="pdf-icon">📄</div>
-                            <h3>Currículo - Alisson Rolim Knies</h3>
-                            <p>Arquiteto e Urbanista especializado em BIM</p>
-                            <button class="btn btn--primary" id="downloadResume">
-                                ⬇️ Baixar PDF
-                            </button>
-                        </div>
-                    </div>
-                    <div class="resume__summary">
-                        <h3>Resumo Executivo</h3>
-                        <div class="summary-item">
-                            <strong>Formação:</strong> Arquitetura e Urbanismo - Universidade Mackenzie (2021)
-                        </div>
-                        <div class="summary-item">
-                            <strong>Experiência:</strong> 2+ anos em gestão de obras e BIM
-                        </div>
-                        <div class="summary-item">
-                            <strong>Especialização:</strong> Revit, MS Project, Construct IN
-                        </div>
-                        <div class="summary-item">
-                            <strong>Certificações:</strong> 8+ certificações profissionais
-                        </div>
-                    </div>
-                </div>
+                <button class="btn btn--primary btn--lg" id="downloadResume">
+                    📄 Baixar Currículo em PDF
+                </button>
             </div>
         </section>
 
-        <!-- Contact Section -->
-        <section id="contact" class="contact py-32">
+        <!-- ======================= Seção de Contato ======================= -->
+        <section id="contact" class="contact py-section">
             <div class="container">
                 <div class="section-header">
-                    <h2 class="section-title">Contato</h2>
-                    <p class="section-subtitle">Vamos conversar sobre oportunidades</p>
+                    <h2 class="section-title">Entre em Contato</h2>
+                    <p class="section-subtitle">Vamos conversar sobre seu próximo projeto.</p>
                 </div>
                 <div class="contact__content">
                     <div class="contact__info">
                         <h3>Informações de Contato</h3>
+                        <p>Estou sempre aberto a novas oportunidades e colaborações. Sinta-se à vontade para me
+                            contatar.</p>
                         <div class="contact-item">
-                            <span class="contact-icon">📧</span>
-                            <span>alisson.arque@gmail.com</span>
+                            <span class="contact-icon">✉️</span>
+                            <a href="mailto:alisson.arque@gmail.com">alisson.arque@gmail.com</a>
                         </div>
                         <div class="contact-item">
-                            <span class="contact-icon">📱</span>
-                            <span>+55 (55) 99931-8835</span>
+                            <span class="contact-icon">📞</span>
+                            <a href="tel:+5555999318835">+55 (55) 99931-8835</a>
                         </div>
                         <div class="contact-item">
                             <span class="contact-icon">📍</span>
-                            <span>Joinville, SC</span>
-                        </div>
-                        <div class="contact-item">
-                            <span class="contact-icon">💼</span>
-                            <a href="https://www.linkedin.com/in/alisson-rolim-knies-53b233213/"
-                                target="_blank">LinkedIn</a>
-                        </div>
-                        <div class="contact__message">
-                            <p>
-                                Estou sempre aberto a novas oportunidades e projetos desafiadores.
-                                Entre em contato para discutirmos como posso contribuir para sua empresa.
-                            </p>
+                            <span>Videira, SC</span>
                         </div>
                     </div>
-                    <div class="contact__form">
-                        <form id="contactForm" class="form">
-                            <div class="form-group">
-                                <label for="name" class="form-label">Nome *</label>
-                                <input type="text" id="name" name="name" class="form-control" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="email" class="form-label">Email *</label>
-                                <input type="email" id="email" name="email" class="form-control" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="company" class="form-label">Empresa</label>
-                                <input type="text" id="company" name="Empresa" class="form-control">
-                            </div>
-                            <div class="form-group">
-                                <label for="subject" class="form-label">Assunto *</label>
-                                <input type="text" id="subject" name="Assunto" class="form-control" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="message" class="form-label">Mensagem *</label>
-                                <textarea id="message" name="Mensagem" class="form-control" rows="5"
-                                    required></textarea>
-                            </div>
-                            <button type="submit" class="btn btn--primary btn--full-width">
-                                Enviar Mensagem
-                            </button>
-                        </form>
+                    <form id="contactForm" class="contact__form">
+                        <h3>Envie uma Mensagem</h3>
+                        <div class="form-group">
+                            <label for="name" class="form-label">Nome</label>
+                            <input type="text" id="name" name="name" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" id="email" name="email" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message" class="form-label">Mensagem</label>
+                            <textarea id="message" name="message" rows="5" class="form-control" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn--primary btn--full-width">Enviar Mensagem</button>
                         <div id="formMessage" class="form-message hidden"></div>
-                    </div>
+                    </form>
                 </div>
             </div>
         </section>
     </main>
 
-    <!-- Project Modal -->
-    <div id="projectModal" class="modal">
-        <div class="modal__content">
-            <button class="modal__close" id="closeModal">&times;</button>
-            <div class="modal__body" id="modalBody">
-                <!-- Modal content will be populated by JavaScript -->
-            </div>
+    <!-- ======================= Rodapé ======================= -->
+    <footer class="footer py-section">
+        <div class="container text-center">
+            <p>&copy; 2025 Alisson Rolim Knies. Todos os direitos reservados.</p>
         </div>
-    </div>
+    </footer>
 
-    <!-- Admin Panel -->
-    <div id="adminPanel" class="admin-panel hidden">
-        <div class="admin-panel__header">
-            <h3>Painel Administrativo - Projetos</h3>
-            <button class="btn btn--secondary" id="closeAdmin">Fechar</button>
-        </div>
-        <div class="admin-panel__content">
-            <button class="btn btn--primary" id="addProject">Adicionar Projeto</button>
-            <div class="admin-projects" id="adminProjects">
-                <!-- Admin projects will be populated by JavaScript -->
-            </div>
-        </div>
-    </div>
-
-    <!-- Project Form Modal -->
-    <div id="projectFormModal" class="modal">
-        <div class="modal__content">
-            <button class="modal__close" id="closeProjectForm">&times;</button>
-            <div class="modal__body">
-                <h3 id="projectFormTitle">Adicionar Projeto</h3>
-                <form id="projectForm" class="form">
-                    <div class="form-group">
-                        <label for="projectTitle" class="form-label">Título *</label>
-                        <input type="text" id="projectTitle" name="title" class="form-control" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="projectDescription" class="form-label">Descrição *</label>
-                        <textarea id="projectDescription" name="description" class="form-control" rows="4"
-                            required></textarea>
-                    </div>
-                    <div class="form-group">
-                        <label for="projectCategory" class="form-label">Categoria *</label>
-                        <select id="projectCategory" name="category" class="form-control" required>
-                            <option value="">Selecione uma categoria</option>
-                            <option value="Residential">Residencial</option>
-                            <option value="Commercial">Comercial</option>
-                            <option value="Planning">Planejamento</option>
-                            <option value="Renovation">Retrofit</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="projectYear" class="form-label">Ano *</label>
-                        <input type="number" id="projectYear" name="year" class="form-control" min="2020" max="2030"
-                            required>
-                    </div>
-                    <div class="form-group">
-                        <label for="projectTags" class="form-label">Tags (separadas por vírgula) *</label>
-                        <input type="text" id="projectTags" name="tags" class="form-control"
-                            placeholder="BIM, Revit, Gestão" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="projectTechnologies" class="form-label">Tecnologias (separadas por vírgula)
-                            *</label>
-                        <input type="text" id="projectTechnologies" name="technologies" class="form-control"
-                            placeholder="Revit, MS Project, AutoCAD" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="projectStatus" class="form-label">Status *</label>
-                        <select id="projectStatus" name="status" class="form-control" required>
-                            <option value="">Selecione um status</option>
-                            <option value="Concluído">Concluído</option>
-                            <option value="Em andamento">Em andamento</option>
-                            <option value="Em desenvolvimento">Em desenvolvimento</option>
-                        </select>
-                    </div>
-                    <div class="form-actions">
-                        <button type="submit" class="btn btn--primary">Salvar Projeto</button>
-                        <button type="button" class="btn btn--secondary" id="cancelProjectForm">Cancelar</button>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
-
-    <!-- Back to Top Button -->
-    <button id="backToTop" class="back-to-top hidden" aria-label="Voltar ao topo">
-        ↑
-    </button>
+    <!-- ======================= Botão Voltar ao Topo ======================= -->
+    <button id="backToTop" class="back-to-top" aria-label="Voltar ao topo">↑</button>
 
     <script src="app.js"></script>
 </body>
