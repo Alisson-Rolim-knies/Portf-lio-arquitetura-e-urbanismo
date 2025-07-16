@@ -338,7 +338,7 @@ function initDownloadButtons() {
 function downloadCV() {
   console.log("📄 Iniciando download do currículo...");
   const link = document.createElement("a");
-  link.href = "assets/curriculo_alisson_knies_atualizado.pdf";
+  link.href = "assets/curriculo_alisson_knies.pdf";
   link.download = "Curriculo_Alisson_Rolim_Knies.pdf";
   document.body.appendChild(link);
   link.click();
