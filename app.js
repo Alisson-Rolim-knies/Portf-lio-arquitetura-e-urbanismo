@@ -5,7 +5,7 @@
 // envio do formulário de contato.
 // ============================================================
 
-// ----------------------- DADOS ------------------------------
+// ----------------------- DADOS / EXPERIENCIAS PARA ADICIONAR COPIE UMA E ALTERE ------------------------------
 const APP_DATA = {
   personalInfo: {
     name: "Alisson Rolim Knies",
@@ -338,7 +338,7 @@ function initDownloadButtons() {
 function downloadCV() {
   console.log("📄 Iniciando download do currículo...");
   const link = document.createElement("a");
-  link.href = "assets/curriculo_alisson_knies.pdf";
+  link.href = "assets/curriculo_alisson_knies_atualizado.pdf";
   link.download = "Curriculo_Alisson_Rolim_Knies.pdf";
   document.body.appendChild(link);
   link.click();
