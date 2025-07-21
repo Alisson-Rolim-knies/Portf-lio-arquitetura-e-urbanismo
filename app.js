@@ -51,9 +51,9 @@ const APP_DATA = {
       period: "2022 - 2024",
       description: "Gestão simultânea de múltiplos contratos de construção, garantindo conformidade técnica e implementação de metodologias BIM. Coordenação de equipes multidisciplinares e controle de qualidade de projetos.",
       achievements: [
-        "Implementação de metodologia BIM em 100% dos projetos",
+        "Implementação de metodologia BIM em projetos",
         "Redução de 30% no tempo de compatibilização de projetos",
-        "Gestão de 5 obras simultâneas com orçamento total de R$ 15M"
+        "Gestão de 6 obras simultâneas "
       ]
     },
     {
@@ -338,7 +338,7 @@ function initDownloadButtons() {
 function downloadCV() {
   console.log("📄 Iniciando download do currículo...");
   const link = document.createElement("a");
-  link.href = "assets/curriculo_alisson_knies_atualizado.pdf";
+  link.href = "assets/curriculo_alisson_knies.pdf";
   link.download = "Curriculo_Alisson_Rolim_Knies.pdf";
   document.body.appendChild(link);
   link.click();
