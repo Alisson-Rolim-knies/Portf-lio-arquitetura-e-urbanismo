@@ -235,8 +235,8 @@ function initProjectCarousels() {
       slides.forEach(slide => slide.classList.remove("active"));
       dots.forEach(dot => dot.classList.remove("active"));
 
-      slides[index].classList.add("active");
-      dots[index].classList.add("active");
+      if (slides[index]) slides[index].classList.add("active");
+      if (dots[index]) dots[index].classList.add("active");
       currentIndex = index;
     }
 
